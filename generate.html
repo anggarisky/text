@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -71,120 +74,34 @@
                     <div class="icon">
                         <img src="" alt="">
                     </div>
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Select Category
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Personal</a></li>
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Personal</a></li>
-                      </ul>
-                    </div>
+                    <select class="selectpicker">
+                        <option value="">Select Category</option>    
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                    </select>
                 </div>
                 <div class="col-lg-4 item">
-                    <div class="closed">
-                    </div>
                     <div class="icon">
                         <img src="" alt="">
                     </div>
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Select Sub-Category
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Garden</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Garden</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Garden</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Garden</a></li>
-                        <li><a href="#">Construction</a></li>
-                      </ul>
-                    </div>
+                    <select class="selectpicker">
+                        <option value="">Select Sub-Category</option>    
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                    </select>
                 </div>
                 <div class="col-lg-4 item">
-                    <div class="closed">
-                    </div>
                     <div class="icon">
                         <img src="" alt="">
                     </div>
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Select Elements
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">Testimonial</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">Product</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">About</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">Testimonial</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">Product</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">About</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">Testimonial</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">Product</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="">About</label>
-                            </div>
-                        </li>
-                      </ul>
-                    </div>
+                    <select class="selectpicker">
+                        <option value="">Select Section</option>    
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -251,6 +168,16 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
+
+    <script>
+        $('.selectpicker').selectpicker({
+          style: 'btn-info',
+          size: 4
+        });
+    </script>
 
 </body>
 

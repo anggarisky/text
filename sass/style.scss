@@ -83,6 +83,11 @@ html {
 .filter-section {
     padding-top: 100px;
     padding-bottom: 100px;
+    .dropdown-toggle {
+        background: none;
+        border: 1px solid $silver-dark;
+        color: $silver-dark;
+    }
     .item {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -104,16 +109,6 @@ html {
             border: 0;
             margin: 0 auto;
             margin-bottom: 20px;
-        }
-        .dropdown-menu {
-            margin: 0 auto;
-            margin-left: 28%;
-            margin-top: 2%;
-            height: 100px;
-            overflow-y: scroll;
-            .checkbox {
-                margin-left: 10px;
-            }
         }
         .closed {
             position: absolute;

@@ -64,6 +64,10 @@ html {
 .filter-section {
   padding-top: 100px;
   padding-bottom: 100px; }
+  .filter-section .dropdown-toggle {
+    background: none;
+    border: 1px solid #8492A6;
+    color: #8492A6; }
   .filter-section .item {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -83,14 +87,6 @@ html {
       border: 0;
       margin: 0 auto;
       margin-bottom: 20px; }
-    .filter-section .item .dropdown-menu {
-      margin: 0 auto;
-      margin-left: 28%;
-      margin-top: 2%;
-      height: 100px;
-      overflow-y: scroll; }
-      .filter-section .item .dropdown-menu .checkbox {
-        margin-left: 10px; }
     .filter-section .item .closed {
       position: absolute;
       background: rgba(233, 233, 233, 0.7);
