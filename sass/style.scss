@@ -88,6 +88,41 @@ html {
         border: 1px solid $silver-dark;
         color: $silver-dark;
     }
+    .input-select-section {
+        width: 220px;
+        margin: 0 auto;
+    }
+    .selectbox {
+        position: relative;
+    }
+    .selectbox select {
+        width: 100%;
+        font-weight: normal;
+    }
+    .overselect {
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+    }
+    #checkboxes {
+        width: 220px;
+        height: 125px;
+        overflow-x: scroll;
+        margin: 0 auto;
+        padding: 10px;
+        display: none;
+        border: 1px #dadada solid;
+        font-weight: normal;
+        text-align: left;
+        line-height: 2;
+        position: absolute;
+        left: 22%;
+    }
+    #checkboxes label {
+        display: block;
+    }
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
     .item {
         padding-top: 50px;
         padding-bottom: 50px;

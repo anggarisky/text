@@ -79,6 +79,15 @@
                         <option value="">Mustard</option>
                         <option value="">Ketchup</option>
                         <option value="">Relish</option>
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
                     </select>
                 </div>
                 <div class="col-lg-4 item">
@@ -90,18 +99,33 @@
                         <option value="">Mustard</option>
                         <option value="">Ketchup</option>
                         <option value="">Relish</option>
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
+                        <option value="">Mustard</option>
+                        <option value="">Ketchup</option>
+                        <option value="">Relish</option>
                     </select>
                 </div>
                 <div class="col-lg-4 item">
                     <div class="icon">
                         <img src="" alt="">
                     </div>
-                    <select class="selectpicker">
-                        <option value="">Select Section</option>    
-                        <option value="">Mustard</option>
-                        <option value="">Ketchup</option>
-                        <option value="">Relish</option>
-                    </select>
+                    <div class="selectbox" onclick="showCheckboxes();">
+                        <div class="form-group input-select-section">
+                          <select class="form-control">
+                            <option>Select Section</option>
+                          </select>
+                        </div>
+                        <div class="overselect"></div>
+                    </div>
+                    <div id="checkboxes">
+                        <label for="one"><input type="checkbox" id="one"/> Testimonial</label>
+                        <label for="two"><input type="checkbox" id="two"/> About</label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,6 +201,19 @@
           style: 'btn-info',
           size: 4
         });
+    </script>
+    <script>
+        var expanded = false;
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
     </script>
 
 </body>
